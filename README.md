@@ -14,4 +14,4 @@ c. When you double-click the copyright text, an image with an explosion will app
 
 4. The easter egg is when you double-click the copyright text, an image with an explosion will appear which have an animated effect similarly to an explosion.
 
-5. I have used Bootstrap and Flex to implement all the requirements.
+5. I have used also Bootstrap and Flex to implement all the requirements.
