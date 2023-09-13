@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="carousel-section">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/header-image1.jpeg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/header-image2.jpeg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/header-image3.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+            <div class="header-text">
+                <p id="title">Book your next trip</p>
+                <p id="subtitle">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the
+                    future</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+            <div class="picker">
+                <div class="leave-from">
+                    <p>Leave From</p>
+                    <select id="leaveFrom" class="form-select"></select>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <select id="to" class="form-select"></select>
+                </div>
+                <div class="date-picker">
+                    <p>Depart</p>
+                    <input type="date" class="form-control" id="datepicker">
+                </div>
+                <div class="search-button">
+                    <button id="searchButton" class="btn btn-primary">SEARCH</button>
+                </div>
+                <div id="loadingOverlay" class="overlay">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-cards1" id="cardsContainer1">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/1.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/7.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Entire Apartment &#x2022; 3 Guests &#x2022; 2 Beds
+                        </p>
+                        <h5 class="card-title">Lovely and cosy apartment</h5>
+                        <p class="card-text">
+                            Siri's latest trick is offering a hands-free TV viewing experience, that will allow
+                            consumers to turn on or off their television, change inputs, fast forward.</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/2.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/8.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Private Room &#x2022; 1 Guest &#x2022; 1 Sofa</p>
+                        <h5 class="card-title">Single room in the center of the city</h5>
+                        <p class="card-text">As Uber works through a huge amount of internal management turmoil, the
+                            company is also consolidating more of its
+                            international business</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/3.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/9.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Entire Apartment &#x2022; 2 Guests &#x2022; 2 Beds
+                        </p>
+                        <h5 class="card-title">Independent house bedroom kitchen</h5>
+                        <p class="card-text">Music is something that every person has his or her own specific opinion
+                            about.
+                            Different people have different taste, and various types of music</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="between-cards">
+                <div class="car"><img src="icons/sport-car.png" alt="First image"></div>
+            </div>
+            <div class="container-cards2" id="cardsContainer2">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/4.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/10.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Entire Apartment &#x2022; 2 Guests &#x2022; 1 Bed
+                        </p>
+                        <h5 class="card-title">Zen Gateway with pool and garden</h5>
+                        <p class="card-text">Fast forward, rewind and more, without having to first invoke a specific
+                            skill, or
+                            even press a button on their remote</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/5.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/11.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Entire Flat &#x2022; 8 Guests &#x2022; 3 Rooms</p>
+                        <h5 class="card-title">Cheapest hotels for a luxury vacation</h5>
+                        <p class="card-text">Today, the company announced it will be combining its rides-on-demand
+                            business and UberEATS.</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top original-image" src="images/6.jpeg" alt="First image">
+                    <img class="card-img-top replacement-image" src="images/12.jpeg" alt="Second image">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 13px;">Entire Apartment &#x2022; 2 Guests &#x2022; 1 Bed
+                        </p>
+                        <h5 class="card-title">Cozy Double Room Near Station</h5>
+                        <p class="card-text">Different people have different taste, and
+                            various tvoes of music have many wavs of
+                            leaving an impact on someone</p>
+                        <a href="#" class="btn btn-outline-primary">FROM / NIGHT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="btn btn-primary">&lt;&lt;</a>
+                <a href="#" class="btn btn-primary">1</a>
+                <a href="#" class="btn btn-primary">2</a>
+                <a href="#" class="btn btn-primary">3</a>
+                <a href="#" class="btn btn-primary">4</a>
+                <a href="#" class="btn btn-primary">5</a>
+                <a href="#" class="btn btn-primary">&gt;&gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-row1">
+            <div class="footer-icon">
+                <img src="icons/building.png" alt="Icon">
+            </div>
+            <div class="footer-links">
+                <a href="#">Company</a>
+                <a href="#">Resources</a>
+                <a href="#">Help &amp; Support</a>
+                <a href="#">Legal</a>
+            </div>
+        </div>
+        <div class="footer-row2">
+            <p>DB Summer School</p>
+        </div>
+        <div class="footer-row3">
+            <div class="footer-icons">
+                <a href="facebook.com">
+                    <img src="icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="twitter.com">
+                    <img src="icons/twitter.png" alt="Twitter">
+                </a>
+                <a href="google.com">
+                    <img src="icons/internet.png" alt="Internet">
+                </a>
+                <a href="github.com">
+                    <img src="icons/github.png" alt="Github">
+                </a>
+                <a href="youtube.com">
+                    <img src="icons/youtube.png" alt="Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-row">
+            <p id="easterEgg">All rights reserved. Copyright &copy; 2023 DB Global Grads by Vlad Iacob</p>
+            <img src="images/explosion.avif" alt="Explosion" class="explosion" id="explosion">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
